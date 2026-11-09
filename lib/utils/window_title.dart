@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:window_manager/window_manager.dart';
 
 import 'package:invoiso/database/company_registry_service.dart';
@@ -10,6 +11,7 @@ import 'package:invoiso/database/company_registry_service.dart';
 /// can change the active company's name: renaming it in Company Info,
 /// switching companies, or creating a new one.
 Future<void> refreshWindowTitle() async {
+  if (kIsWeb) return;
   if (!(Platform.isWindows || Platform.isLinux || Platform.isMacOS)) return;
 
   final companies = await CompanyRegistryService.listCompanies();

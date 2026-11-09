@@ -66,42 +66,44 @@ Future<void> main() async {
     );
   };
 
-  if (!Platform.isAndroid) {
+  if (!kIsWeb && !Platform.isAndroid) {
     sqfliteFfiInit();
     databaseFactory = databaseFactoryFfi;
   }
   WidgetsFlutterBinding.ensureInitialized();
   registerFallbackNumberSymbols();
-  await CompanyRegistryService.ensureDefaultCompanyRegistered();
-  DatabaseHelper().setActiveFileNameBeforeFirstOpen(
-      await CompanyRegistryService.getActiveCompanyDbFileName());
-  await CompanyRegistryService.nameActiveDbIfMissing();
-  BackendServices.configure(
-    settings: SqliteSettingsRepository(),
-    companyInfo: SqliteCompanyInfoRepository(),
-    invoices: SqliteInvoiceRepository(),
-    payments: SqlitePaymentRepository(),
-    installation: SqliteInstallationRepository()
-  );
-
-  if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
-    await windowManager.ensureInitialized();
-
-    const WindowOptions options = WindowOptions(
-      title: 'Bizbilling',
-      minimumSize: Size(600, 400),
-      center: true,
-      backgroundColor: Colors.white,
-      titleBarStyle: TitleBarStyle.normal,
+  if (!kIsWeb) {
+    await CompanyRegistryService.ensureDefaultCompanyRegistered();
+    DatabaseHelper().setActiveFileNameBeforeFirstOpen(
+        await CompanyRegistryService.getActiveCompanyDbFileName());
+    await CompanyRegistryService.nameActiveDbIfMissing();
+    BackendServices.configure(
+      settings: SqliteSettingsRepository(),
+      companyInfo: SqliteCompanyInfoRepository(),
+      invoices: SqliteInvoiceRepository(),
+      payments: SqlitePaymentRepository(),
+      installation: SqliteInstallationRepository()
     );
 
-    windowManager.waitUntilReadyToShow(options, () async {
-      await windowManager.center();
-      await windowManager.show();
-      await windowManager.focus();
-    });
+    if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
+      await windowManager.ensureInitialized();
 
-    await refreshWindowTitle();
+      const WindowOptions options = WindowOptions(
+        title: 'Bizbilling',
+        minimumSize: Size(600, 400),
+        center: true,
+        backgroundColor: Colors.white,
+        titleBarStyle: TitleBarStyle.normal,
+      );
+
+      windowManager.waitUntilReadyToShow(options, () async {
+        await windowManager.center();
+        await windowManager.show();
+        await windowManager.focus();
+      });
+
+      await refreshWindowTitle();
+    }
   }
 
   runApp(ProviderScope(
