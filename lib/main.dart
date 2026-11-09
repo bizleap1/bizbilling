@@ -88,6 +88,7 @@ Future<void> main() async {
     await windowManager.ensureInitialized();
 
     const WindowOptions options = WindowOptions(
+      title: 'Bizbilling',
       minimumSize: Size(600, 400),
       center: true,
       backgroundColor: Colors.white,

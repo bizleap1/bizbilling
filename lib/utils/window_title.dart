@@ -13,11 +13,17 @@ Future<void> refreshWindowTitle() async {
   if (!(Platform.isWindows || Platform.isLinux || Platform.isMacOS)) return;
 
   final companies = await CompanyRegistryService.listCompanies();
-  if (companies.length <= 1) return;
+  if (companies.length <= 1) {
+    await windowManager.setTitle('Bizbilling');
+    return;
+  }
 
   final activeId = await CompanyRegistryService.getActiveCompanyId();
   final active = companies.where((c) => c.id == activeId).firstOrNull;
-  if (active == null) return;
+  if (active == null) {
+    await windowManager.setTitle('Bizbilling');
+    return;
+  }
 
-  await windowManager.setTitle('Invoiso — ${active.name}');
+  await windowManager.setTitle('Bizbilling — ${active.name}');
 }

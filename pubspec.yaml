@@ -89,17 +89,17 @@ flutter_launcher_icons:
 
 package_rename_config:
   linux:
-    app_name: invoiso
-    package_name: invoiso
-    exe_name: invoiso
+    app_name: Bizbilling
+    package_name: bizbilling
+    exe_name: bizbilling
 
   windows:
-    app_name: invoiso
+    app_name: Bizbilling
     organization: anoopp
     copyright_notice: Copyright ©️ 2025 anoopp. All rights reserved.
     exe_name: invoiso
 
   web:
-    app_name: invoiso
-    short_app_name: invoiso
+    app_name: Bizbilling
+    short_app_name: Bizbilling
     description: Invoice generating desktop app built with Flutter

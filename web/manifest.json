@@ -1,6 +1,6 @@
 {
-    "name": "invoiso",
-    "short_name": "invoiso",
+    "name": "Bizbilling",
+    "short_name": "Bizbilling",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

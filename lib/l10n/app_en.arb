@@ -1,6 +1,6 @@
 {
   "@@locale": "en",
-  "appTitle": "Invoiso",
+  "appTitle": "Bizbilling",
   "@appTitle": {
     "description": "The application title"
   },
@@ -129,8 +129,8 @@
       }
     }
   },
-  "dashboardSupportBannerReviewSubtitle": "Enjoying Invoiso? A quick review helps a lot.",
-  "dashboardSupportBannerSupportSubtitle": "Looks like Invoiso is part of your workflow. If it's been helpful, consider supporting the project — whenever it feels right.",
+  "dashboardSupportBannerReviewSubtitle": "Enjoying Bizbilling? A quick review helps a lot.",
+  "dashboardSupportBannerSupportSubtitle": "Looks like Bizbilling is part of your workflow. If it's been helpful, consider supporting the project — whenever it feels right.",
   "dashboardReviewAction": "Review",
   "dashboardSupportAction": "Support",
   "dashboardOverviewTitle": "Dashboard Overview",
@@ -2468,7 +2468,7 @@
   "companyMgmtActiveBadge": "Active",
   "companyMgmtSwitchButton": "Switch",
   "companyMgmtSwitchConfirmTitle": "Switch Company?",
-  "companyMgmtSwitchConfirmBody": "Invoiso will restart to switch to \"{name}\".",
+  "companyMgmtSwitchConfirmBody": "Bizbilling will restart to switch to \"{name}\".",
   "@companyMgmtSwitchConfirmBody": {
     "placeholders": {
       "name": {"type": "String"}
@@ -2498,12 +2498,12 @@
     }
   },
   "companyMgmtSwitchRestartTitle": "Company Switched",
-  "companyMgmtSwitchRestartBody": "Invoiso needs to restart to finish switching companies. Please close and reopen the application.",
+  "companyMgmtSwitchRestartBody": "Bizbilling needs to restart to finish switching companies. Please close and reopen the application.",
   "companyMgmtCreateRestartTitle": "Company Created",
   "companyMgmtCreateRestartBody": "Your new company is ready. Please close and reopen the application to continue.",
   "companyMgmtDeletedMessage": "Company deleted",
   "companyMgmtDeleteRestartTitle": "Company Deleted",
-  "companyMgmtDeleteRestartBody": "The company was deleted and Invoiso switched to another one. Please close and reopen the application to continue.",
+  "companyMgmtDeleteRestartBody": "The company was deleted and Bizbilling switched to another one. Please close and reopen the application to continue.",
   "companyMgmtOnlyCompanyTooltip": "You need at least one other company before you can delete this one",
   "loginCompanyGearTooltip": "Manage companies",
   "loginCompanySelectorLabel": "Company",
@@ -2529,7 +2529,7 @@
   "customizationCustomFieldsDescription": "Need extra fields on your invoices? (PO number, project code, department, etc.) We'll add them for you.",
   "customizationCustomFieldsDelivery": "1–3 days",
   "customizationWhiteLabelTitle": "White-label / Remove Branding",
-  "customizationWhiteLabelDescription": "Remove all Invoiso branding from the app and PDF outputs, and replace it with your own company identity.",
+  "customizationWhiteLabelDescription": "Remove all Bizbilling branding from the app and PDF outputs, and replace it with your own company identity.",
   "customizationWhiteLabelDelivery": "3–6 days",
   "customizationIndustryBuildTitle": "Industry-specific Build",
   "customizationIndustryBuildDescription": "Need a version tailored to your industry? (construction, consulting, retail, etc.) We'll customise the workflow to fit your needs.",
@@ -2749,7 +2749,7 @@
   "customerInfoButtonTooltip": "View contact details",
   "customerInfoButtonNoContactMessage": "No contact details available.",
   "updateDialogTitle": "Update Available",
-  "updateDialogBodyMessage": "A new version of invoiso is available. Visit the download page to get the latest release.",
+  "updateDialogBodyMessage": "A new version of Bizbilling is available. Visit the download page to get the latest release.",
   "pageSizeA4Label": "Standard A4",
   "pageSizeA5Label": "Standard A5",
   "pageSizeA6Label": "Standard A6",

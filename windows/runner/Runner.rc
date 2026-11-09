@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "anoopp" "\0"
-            VALUE "FileDescription", "invoiso" "\0"
+            VALUE "FileDescription", "Bizbilling" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "invoiso" "\0"
+            VALUE "InternalName", "Bizbilling" "\0"
             VALUE "LegalCopyright", "Copyright ©️ 2025 anoopp. All rights reserved." "\0"
-            VALUE "OriginalFilename", "invoiso.exe" "\0"
-            VALUE "ProductName", "invoiso" "\0"
+            VALUE "OriginalFilename", "Bizbilling.exe" "\0"
+            VALUE "ProductName", "Bizbilling" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
